@@ -1,0 +1,9 @@
+<configuration plugin="b3discord">
+        <settings name="settings">
+                <!-- The URL to your Servers widget.json, enable it in your server prefs under 'Widget'-->
+                <set name="discord_widget_url">https://discordapp.com/api/servers/YOUR_ID/widget.json</set>
+
+                <!-- The number of seconds between each broadcast on the server -->
+                <set name="repeat_interval">300</set>
+        </settings>
+</configuration>
