@@ -1,19 +1,9 @@
-
-__version__ = '0.0.1'
-__author__ = 'jahoefen'
-
-import threading
-import time
 import os
 import b3
 import b3.events
 import b3.plugin
 import json
 import urllib2
-
-class Vote:
-    Vote = 0
-
 
 # --------------------------------------------------------------------------------------------------
 class B3DiscordPlugin(b3.plugin.Plugin):
@@ -27,7 +17,7 @@ class B3DiscordPlugin(b3.plugin.Plugin):
             self._repeat_interval = self.config.getint('settings', 'repeat_interval')
         except:
             self._repeat_seconds = 300
-        self.CyclicListPlayers(self);
+        self.CyclicListPlayers()
 
     def CyclicListPlayers(self):
         self._discord_widget_url = "https://discordapp.com/api/servers/162787891422953473/widget.json"
